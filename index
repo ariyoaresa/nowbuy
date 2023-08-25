@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+        /* Global styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background-color: rgb(182, 180, 178);
+      }
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      a:hover{
+        color: rgb(207, 204, 200);
+      }
+
+      h1, h2, h3 {
+        margin-bottom: 1rem;
+      }
+
+        /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+        nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li a {
+        margin-left: 20px;
+        color: #333;
+      }
+
+        /* Hero section styles */
+      .hero {
+        background-image: url('hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      .hero .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .hero .btn:hover {
+        background-color: #3f3e3e;
+        color: #fff;
+      }
+
+        /* Products section styles */
+      .products {
+        padding: 50px;
+      }
+
+      .products h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .products ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        list-style: none;
+      }
+
+      .products li {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .products li img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .products li h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .products li p {
+        margin-bottom: 2rem;
+       }
+
+      .products li .btn {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .products li .btn:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+        /* Newsletter section styles */
+      .newsletter {
+        background-color: #333;
+        color: #fff;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .newsletter h2 {
+        margin-bottom: 2rem;
+      }
+
+      .newsletter form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .newsletter input[type="email"] {
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      form button{
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #3d3b3b;
+        color: #fff;
+      }
+
+      footer{
+          text-align: center;
+          background-color: #333;
+          color: white;
+      }
+      @media(max-width:990px) {
+        .products ul{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+    <title>NowBuy - Your one-stop-shop for all your needs</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="NowBuy1.html">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <h1>Welcome to NowBuy</h1>
+        <p>Your one-stop-shop for all your needs</p>
+        <a href="NowBuy1.html" class="btn">Shop Now</a>
+      </section>
+      <section class="products">
+        <h2>Popular Products</h2>
+        <ul>
+          <li>
+            <img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/Y/L/203282_1661926186.jpg" alt="Premium Long Grain Rice">
+            <h3>Premium Long Grain Rice</h3>
+            <p>Premium Long Grain Rice for just ₦20,000</p>
+            <a href="#buy" class="btn">Buy Now</a>
+          </li>
+          <li>
+            <img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/Q/C/68242_1687693777.jpg" alt="Horizon Rechargeable Hand Fan">
+            <h3>Horizon Rechargeable Hand Fan</h3>
+            <p>At just ₦10,000, this fan is an affordable solution to keep you cool and comfortable on-the-go.</p>
+            <a href="#buy" class="btn">Buy Now</a>
+          </li>
+          <li>
+            <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/81/9443332/1.jpg?0275" alt="oraimo charger">
+            <h3>Oraimo Charger</h3>
+            <p>The oraimo charger is a high-quality and reliable device that is perfect for charging your mobile devices on the go.</p>
+            <a href="#buy" class="btn">Buy Now</a>
+          </li>
+        </ul>
+      </section>
+      <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <form>
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+      <footer>
+        <p>&copy; 2023 NowBuy. All rights reserved.</p>
+        <p>&copy; Site created by Ariz Tech. All rights reserved.</p>
+      </footer>
+    
+      <!-- Add the chatbot code here -->
+      <script src="chatbot.js"></script>
+</body>
+</html>
